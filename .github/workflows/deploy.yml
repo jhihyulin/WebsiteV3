@@ -22,6 +22,7 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_WEBPAGE_349C7 }}'
           channelId: live
           projectId: webpage-349c7
+          entryPoint: .
 
       - name: Cloudflare Purge Cache
         uses: jakejarvis/cloudflare-purge-action@v0.3.0
